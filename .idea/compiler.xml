@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="smart-jar-generator" />
+        <module name="smart-lib-base" />
+        <module name="smart-lib-base (2) (com.xinnet)" />
+        <module name="vote-sys" />
+        <module name="vote-sys (2)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="smart-jar-generator" target="1.8" />
+      <module name="smart-lib-base" target="1.7" />
+      <module name="smart-lib-base (1) (com.xinnet.cloud)" target="1.8" />
+      <module name="smart-lib-base (2) (com.xinnet)" target="1.7" />
+      <module name="vote" target="1.7" />
+      <module name="vote (1)" target="1.5" />
+      <module name="vote (2)" target="1.7" />
+      <module name="vote-sys" target="1.7" />
+      <module name="vote-sys (1)" target="1.7" />
+      <module name="vote-sys (2)" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

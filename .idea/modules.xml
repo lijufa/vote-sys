@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/vote-sys/generator/smart-jar-generator.iml" filepath="$PROJECT_DIR$/vote-sys/generator/smart-jar-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base/smart-lib-base.iml" filepath="$PROJECT_DIR$/base/smart-lib-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vote.iml" filepath="$PROJECT_DIR$/vote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vote-sys/vote-sys.iml" filepath="$PROJECT_DIR$/vote-sys/vote-sys.iml" />
+    </modules>
+  </component>
+</project>

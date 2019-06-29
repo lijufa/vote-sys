@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="smart-lib-base-v1">
+    <CLASSES>
+      <root url="jar://E:/project/vote/base/target/smart-lib-base-v1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

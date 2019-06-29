@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="smart-jar-generator-v11">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/vote-sys/generator/target/smart-jar-generator-v1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

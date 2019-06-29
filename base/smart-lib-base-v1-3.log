@@ -1,0 +1,52 @@
+20190626132957239 com.xinnet.smart.base.util.ShellTest.osName:19[main:0]DEBUG:Windows 7
+20190626132957239 com.xinnet.smart.base.util.model.Shell.runs:70[main:0]INFO:shell direcotry---------->.
+20190626132957271 com.xinnet.smart.base.util.model.Shell.info:154[main:32]ERROR:ls 
+20190626132957271 com.xinnet.smart.base.util.model.Shell.info:155[main:32]ERROR:
+20190626132957271 com.xinnet.smart.base.util.UDateTest.percent:17[main:32]DEBUG:504.0
+20190626132957271 com.xinnet.smart.base.util.UDoubleTest.test:19[main:32]DEBUG:3.3306690738754696E-16
+20190626132957271 com.xinnet.smart.base.util.UDoubleTest.test:20[main:32]DEBUG:0.1235
+20190626132957271 com.xinnet.smart.base.util.model.PeriodVo.percent:78[main:32]DEBUG:pm:12
+20190626132957271 com.xinnet.smart.base.util.model.PeriodVo.percent:79[main:32]DEBUG:end:1476839630000
+20190626132957271 com.xinnet.smart.base.util.model.PeriodVo.percent:80[main:32]DEBUG:start:1445217230000
+20190626132957271 com.xinnet.smart.base.util.model.PeriodVo.percent:81[main:32]DEBUG:结束时间减去开始时间，购买时长:31622400000
+20190626132957271 com.xinnet.smart.base.util.UDoubleTest.test:22[main:32]DEBUG:0.9999994624
+20190626132957302 com.xinnet.smart.base.util.UJsonTest.toObject:43[main:63]DEBUG:{a:0,b:2}
+20190626132957302 com.xinnet.smart.base.util.UJsonTest.toObject:45[main:63]DEBUG:a:0,b:2
+20190626132957302 com.xinnet.smart.base.util.UKeyPoolTest.test:14[main:63]DEBUG:97
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private native"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private native"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers ""
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private native"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "native"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private static"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private native"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "native"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "native"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers ""
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private native"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers ""
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private native"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers "private native"
+20190626132957317 com.xinnet.smart.base.util.UMethod.getStringMap:104[main:78]ERROR:Class com.xinnet.smart.base.util.UMethod can not access a member of class java.lang.Class with modifiers ""
+20190626132957333 com.xinnet.smart.base.util.UNumberTest.test:15[main:94]DEBUG:0.3333333333
+20190626132957333 com.xinnet.smart.vo.URequest.log:89[main:94]INFO:nullnull
+{success:false}
+20190626132957333 com.xinnet.smart.base.util.UTimeTest.dt:24[main:94]DEBUG:1561526997333945,1561526997333,1561526997333
+20190626132957333 com.xinnet.smart.base.util.UTimeTest.test:30[main:94]DEBUG:0
+20190626132957333 com.xinnet.smart.base.util.UTimeTest.dt:24[main:94]DEBUG:1561526997333370,1561526997333,1561526997333
+20190626132957333 com.xinnet.smart.base.util.UTimeTest.test:30[main:94]DEBUG:0
+20190626132957333 com.xinnet.smart.base.util.UTimeTest.dt:24[main:94]DEBUG:1561526997333701,1561526997333,1561526997333
+20190626132957333 com.xinnet.smart.base.util.UTimeTest.test:30[main:94]DEBUG:0
+20190626132957333 com.xinnet.smart.base.util.UTimeTest.dt:24[main:94]DEBUG:1561526997333120,1561526997333,1561526997333
+20190626132957333 com.xinnet.smart.base.util.UTimeTest.test:30[main:94]DEBUG:0
+20190626132957333 com.xinnet.smart.base.util.UTimeTest.dt:24[main:94]DEBUG:1561526997333429,1561526997333,1561526997333
+20190626132957333 com.xinnet.smart.base.util.UTimeTest.test:30[main:94]DEBUG:0
+20190626132957333 com.xinnet.smart.base.util.UTimeTest.dt:24[main:94]DEBUG:1561526997333708,1561526997333,1561526997333
+20190626132957333 com.xinnet.smart.base.util.UTimeTest.test:30[main:94]DEBUG:0
+20190626132957349 com.xinnet.smart.base.util.UUniqueTest.test:14[main:110]DEBUG:1637379732772225025,1637379732772225033
+20190626132957349 com.xinnet.smart.base.util.UUniqueTest.test:15[main:110]DEBUG:cfuao8ywopox
