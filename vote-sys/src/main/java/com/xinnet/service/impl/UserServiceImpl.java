@@ -14,7 +14,7 @@ import java.util.Map;
 @Service(value="userService")
 public class UserServiceImpl implements UserService {
     
-    @Resource(name="userDao")
+    @Resource(name="IUserDao")
     private IUserDao userDao;
     
     @Override

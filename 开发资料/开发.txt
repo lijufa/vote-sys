@@ -1,0 +1,12 @@
+1 »·¾³
+clean install -Dmaven.test.skip tomcat7:run -Pdev
+
+2 
+http://localhost:8989/book/1/list
+
+
+ http://localhost:8081/smartBus-Web-v1
+
+https://dev-www.pppcloud.cn
+http://localhost:8081/smartBus-Web-v1/account/check_current
+/smartBus-Web-v1/account/check_current
