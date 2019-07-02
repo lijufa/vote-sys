@@ -5,5 +5,9 @@
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/smart-jar-generator" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/vote-sys" type="4"/>
 </workingSet>
+<<<<<<< HEAD
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1561974465522_1" label="Window Working Set" name="Aggregate for window 1561974465522"/>
+=======
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1561969999711_1" label="Window Working Set" name="Aggregate for window 1561969999711"/>
+>>>>>>> 62088e1d6cbdedc547a25c02d675a09f4dbea691
 </workingSetManager>

@@ -1,3 +1,7 @@
 eclipse.preferences.version=1
 locationorg.eclipse.jst.server.tomcat.runtime.70=E\:/apache-tomcat-7.0.61
+<<<<<<< HEAD
 locationorg.eclipse.jst.server.tomcat.runtime.80=D\:/apache-tomcat-8.0.32
+=======
+locationorg.eclipse.jst.server.tomcat.runtime.80=D\:/software/apache-tomcat-8.0.32
+>>>>>>> 62088e1d6cbdedc547a25c02d675a09f4dbea691
