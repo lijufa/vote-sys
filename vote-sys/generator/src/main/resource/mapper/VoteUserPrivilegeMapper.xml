@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xinnet.dao.IVoteUserPrivilegeDao">
+	<sql id="tablename">`vote_user_privilege`</sql>
+	<sql id="fields">t.`star_name` AS `starName`,t.`idol_flock_num` AS `idolFlockNum`,t.`idol_image` AS `idolImage`,t.`star_id` AS `starId`,t.`idol_flock_image` AS `idolFlockImage`,t.`update_time` AS `updateTime`,t.`idol_message` AS `idolMessage`,t.`create_time` AS `createTime`,t.`user_id` AS `userId`,t.`user_name` AS `userName`,t.`id`,t.`vote_num` AS `voteNum`</sql>
+	<sql id="fieldsForInsert">`star_name`,`idol_flock_num`,`idol_image`,`star_id`,`idol_flock_image`,`update_time`,`idol_message`,`create_time`,`user_id`,`user_name`,`id`,`vote_num`</sql>
+	<insert id="insert" parameterType="com.xinnet.entity.VoteUserPrivilegeBean">
+		INSERT INTO <include refid="tablename"/>(<include refid="fieldsForInsert"/>) 
+		VALUES(#{starName},#{idolFlockNum},#{idolImage},#{starId},#{idolFlockImage},#{updateTime},#{idolMessage},#{createTime},#{userId},#{userName},#{id},#{voteNum})
+	</insert>
+	<insert id="inserts" parameterType="java.lang.Iterable">
+		INSERT INTO <include refid="tablename"/>(<include refid="fieldsForInsert"/>) VALUES
+		<foreach collection="list" item="item" index="index" separator=",">
+			(#{item.starName},#{item.idolFlockNum},#{item.idolImage},#{item.starId},#{item.idolFlockImage},#{item.updateTime},#{item.idolMessage},#{item.createTime},#{item.userId},#{item.userName},#{item.id},#{item.voteNum})
+		</foreach>
+	</insert>
+	<delete id="deletes">
+		DELETE FROM <include refid="tablename"/>
+	</delete>
+	<select id="selectOne" resultType="com.xinnet.entity.VoteUserPrivilegeBean"  parameterType="com.xinnet.entity.VoteUserPrivilegeBean">
+		SELECT <include refid="fields"/> FROM <include refid="tablename"/> t
+		<where>
+			<if test="starName != null"> AND t.`star_name`=#{starName}</if>
+ 			<if test="idolFlockNum != null"> AND t.`idol_flock_num`=#{idolFlockNum}</if>
+ 			<if test="idolImage != null"> AND t.`idol_image`=#{idolImage}</if>
+ 			<if test="starId != null"> AND t.`star_id`=#{starId}</if>
+ 			<if test="idolFlockImage != null"> AND t.`idol_flock_image`=#{idolFlockImage}</if>
+ 			<if test="updateTime != null"> AND t.`update_time`=#{updateTime}</if>
+ 			<if test="idolMessage != null"> AND t.`idol_message`=#{idolMessage}</if>
+ 			<if test="createTime != null"> AND t.`create_time`=#{createTime}</if>
+ 			<if test="userId != null"> AND t.`user_id`=#{userId}</if>
+ 			<if test="userName != null"> AND t.`user_name`=#{userName}</if>
+ 			<if test="id != null"> AND t.`id`=#{id}</if>
+ 			<if test="voteNum != null"> AND t.`vote_num`=#{voteNum}</if>
+			<if test="id_array != null"> AND `id` IN 
+				<foreach collection="id_array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+			</if>
+			<if test="_where != null"> AND ${_where}</if>
+		</where>
+		LIMIT 1
+	</select>
+	<select id="select" resultType="com.xinnet.entity.VoteUserPrivilegeBean"  parameterType="com.xinnet.entity.VoteUserPrivilegeBean">
+		SELECT <include refid="fields"/> FROM <include refid="tablename"/> t
+		<where>
+			<if test="starName != null"> AND t.`star_name`=#{starName}</if>
+ 			<if test="idolFlockNum != null"> AND t.`idol_flock_num`=#{idolFlockNum}</if>
+ 			<if test="idolImage != null"> AND t.`idol_image`=#{idolImage}</if>
+ 			<if test="starId != null"> AND t.`star_id`=#{starId}</if>
+ 			<if test="idolFlockImage != null"> AND t.`idol_flock_image`=#{idolFlockImage}</if>
+ 			<if test="updateTime != null"> AND t.`update_time`=#{updateTime}</if>
+ 			<if test="idolMessage != null"> AND t.`idol_message`=#{idolMessage}</if>
+ 			<if test="createTime != null"> AND t.`create_time`=#{createTime}</if>
+ 			<if test="userId != null"> AND t.`user_id`=#{userId}</if>
+ 			<if test="userName != null"> AND t.`user_name`=#{userName}</if>
+ 			<if test="id != null"> AND t.`id`=#{id}</if>
+ 			<if test="voteNum != null"> AND t.`vote_num`=#{voteNum}</if>
+			<if test="id_array != null"> AND `id` IN 
+				<foreach collection="id_array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+			</if>
+			<if test="_where != null"> AND ${_where}</if>
+		</where>
+		ORDER BY t.`update_time` desc,t.`create_time` desc,t.`id` desc
+	</select>
+	<select id="selectPaged" resultType="com.xinnet.entity.VoteUserPrivilegeBean"  parameterType="com.xinnet.entity.VoteUserPrivilegeBean">
+		SELECT <include refid="fields"/> FROM <include refid="tablename"/> t
+		<where>
+			<if test="starName != null"> AND t.`star_name`=#{starName}</if>
+ 			<if test="idolFlockNum != null"> AND t.`idol_flock_num`=#{idolFlockNum}</if>
+ 			<if test="idolImage != null"> AND t.`idol_image`=#{idolImage}</if>
+ 			<if test="starId != null"> AND t.`star_id`=#{starId}</if>
+ 			<if test="idolFlockImage != null"> AND t.`idol_flock_image`=#{idolFlockImage}</if>
+ 			<if test="updateTime != null"> AND t.`update_time`=#{updateTime}</if>
+ 			<if test="idolMessage != null"> AND t.`idol_message`=#{idolMessage}</if>
+ 			<if test="createTime != null"> AND t.`create_time`=#{createTime}</if>
+ 			<if test="userId != null"> AND t.`user_id`=#{userId}</if>
+ 			<if test="userName != null"> AND t.`user_name`=#{userName}</if>
+ 			<if test="id != null"> AND t.`id`=#{id}</if>
+ 			<if test="voteNum != null"> AND t.`vote_num`=#{voteNum}</if>
+			<if test="id_array != null"> AND `id` IN 
+				<foreach collection="id_array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+			</if>
+			<if test="_where != null"> AND ${_where}</if>
+		</where>
+		ORDER BY t.`update_time` desc,t.`create_time` desc,t.`id` desc
+	</select>
+	<select id="total" resultType="java.lang.Long"  parameterType="com.xinnet.entity.VoteUserPrivilegeBean">
+		SELECT COUNT(1) FROM <include refid="tablename"/> t
+		<where>
+			<if test="starName != null"> AND t.`star_name`=#{starName}</if>
+ 			<if test="idolFlockNum != null"> AND t.`idol_flock_num`=#{idolFlockNum}</if>
+ 			<if test="idolImage != null"> AND t.`idol_image`=#{idolImage}</if>
+ 			<if test="starId != null"> AND t.`star_id`=#{starId}</if>
+ 			<if test="idolFlockImage != null"> AND t.`idol_flock_image`=#{idolFlockImage}</if>
+ 			<if test="updateTime != null"> AND t.`update_time`=#{updateTime}</if>
+ 			<if test="idolMessage != null"> AND t.`idol_message`=#{idolMessage}</if>
+ 			<if test="createTime != null"> AND t.`create_time`=#{createTime}</if>
+ 			<if test="userId != null"> AND t.`user_id`=#{userId}</if>
+ 			<if test="userName != null"> AND t.`user_name`=#{userName}</if>
+ 			<if test="id != null"> AND t.`id`=#{id}</if>
+ 			<if test="voteNum != null"> AND t.`vote_num`=#{voteNum}</if>
+			<if test="id_array != null"> AND `id` IN 
+				<foreach collection="id_array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+			</if>
+			<if test="_where != null"> AND ${_where}</if>
+		</where>
+	</select>
+	<delete id="delete" parameterType="java.lang.String">
+		DELETE FROM <include refid="tablename"/> WHERE `id`=#{id}
+	</delete>
+	<update id="update" parameterType="com.xinnet.entity.VoteUserPrivilegeBean">
+		UPDATE <include refid="tablename"/>
+		<set>
+			<if test="starName != null">
+				`star_name`=#{starName},
+			</if>
+ 			<if test="idolFlockNum != null">
+				`idol_flock_num`=#{idolFlockNum},
+			</if>
+ 			<if test="idolImage != null">
+				`idol_image`=#{idolImage},
+			</if>
+ 			<if test="starId != null">
+				`star_id`=#{starId},
+			</if>
+ 			<if test="idolFlockImage != null">
+				`idol_flock_image`=#{idolFlockImage},
+			</if>
+ 			<if test="updateTime != null">
+				`update_time`=#{updateTime},
+			</if>
+ 			<if test="idolMessage != null">
+				`idol_message`=#{idolMessage},
+			</if>
+ 			<if test="createTime != null">
+				`create_time`=#{createTime},
+			</if>
+ 			<if test="userId != null">
+				`user_id`=#{userId},
+			</if>
+ 			<if test="userName != null">
+				`user_name`=#{userName},
+			</if>
+  			<if test="voteNum != null">
+				`vote_num`=#{voteNum},
+			</if>
+		</set>
+		WHERE `id`=#{id}
+	</update>
+	<update id="updates" parameterType="com.xinnet.entity.VoteUserPrivilegeBean">
+		UPDATE <include refid="tablename"/>
+		<set>
+			<if test="starName != null">
+				`star_name`=#{starName},
+			</if>
+ 			<if test="idolFlockNum != null">
+				`idol_flock_num`=#{idolFlockNum},
+			</if>
+ 			<if test="idolImage != null">
+				`idol_image`=#{idolImage},
+			</if>
+ 			<if test="starId != null">
+				`star_id`=#{starId},
+			</if>
+ 			<if test="idolFlockImage != null">
+				`idol_flock_image`=#{idolFlockImage},
+			</if>
+ 			<if test="updateTime != null">
+				`update_time`=#{updateTime},
+			</if>
+ 			<if test="idolMessage != null">
+				`idol_message`=#{idolMessage},
+			</if>
+ 			<if test="createTime != null">
+				`create_time`=#{createTime},
+			</if>
+ 			<if test="userId != null">
+				`user_id`=#{userId},
+			</if>
+ 			<if test="userName != null">
+				`user_name`=#{userName},
+			</if>
+  			<if test="voteNum != null">
+				`vote_num`=#{voteNum},
+			</if>
+		</set>
+		WHERE `id` IN 
+				<foreach collection="id_array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+	</update>
+	<update id="updateAll" parameterType="com.xinnet.entity.VoteUserPrivilegeBean">
+		UPDATE <include refid="tablename"/>
+		<set>
+			<if test="starName != null">
+				`star_name`=#{starName},
+			</if>
+ 			<if test="idolFlockNum != null">
+				`idol_flock_num`=#{idolFlockNum},
+			</if>
+ 			<if test="idolImage != null">
+				`idol_image`=#{idolImage},
+			</if>
+ 			<if test="starId != null">
+				`star_id`=#{starId},
+			</if>
+ 			<if test="idolFlockImage != null">
+				`idol_flock_image`=#{idolFlockImage},
+			</if>
+ 			<if test="updateTime != null">
+				`update_time`=#{updateTime},
+			</if>
+ 			<if test="idolMessage != null">
+				`idol_message`=#{idolMessage},
+			</if>
+ 			<if test="createTime != null">
+				`create_time`=#{createTime},
+			</if>
+ 			<if test="userId != null">
+				`user_id`=#{userId},
+			</if>
+ 			<if test="userName != null">
+				`user_name`=#{userName},
+			</if>
+  			<if test="voteNum != null">
+				`vote_num`=#{voteNum},
+			</if>
+		</set>
+	</update>
+	<select id="selectById" resultType="com.xinnet.entity.VoteUserPrivilegeBean"  parameterType="java.lang.String">
+		SELECT <include refid="fields"/> FROM <include refid="tablename"/> t WHERE `id`=#{id}
+	</select>
+	<select id="selectByIdArray" resultType="com.xinnet.entity.VoteUserPrivilegeBean">
+		SELECT <include refid="fields"/> FROM <include refid="tablename"/> t WHERE t.`id` IN 
+		<foreach collection="array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+		ORDER BY t.`update_time` desc,t.`create_time` desc,t.`id` desc
+	</select>
+	<select id="selectId" resultType="java.lang.String"  parameterType="com.xinnet.entity.VoteUserPrivilegeBean">
+		SELECT `id` FROM <include refid="tablename"/> t
+		<where>
+			<if test="starName != null"> AND t.`star_name`=#{starName}</if>
+ 			<if test="idolFlockNum != null"> AND t.`idol_flock_num`=#{idolFlockNum}</if>
+ 			<if test="idolImage != null"> AND t.`idol_image`=#{idolImage}</if>
+ 			<if test="starId != null"> AND t.`star_id`=#{starId}</if>
+ 			<if test="idolFlockImage != null"> AND t.`idol_flock_image`=#{idolFlockImage}</if>
+ 			<if test="updateTime != null"> AND t.`update_time`=#{updateTime}</if>
+ 			<if test="idolMessage != null"> AND t.`idol_message`=#{idolMessage}</if>
+ 			<if test="createTime != null"> AND t.`create_time`=#{createTime}</if>
+ 			<if test="userId != null"> AND t.`user_id`=#{userId}</if>
+ 			<if test="userName != null"> AND t.`user_name`=#{userName}</if>
+ 			<if test="id != null"> AND t.`id`=#{id}</if>
+ 			<if test="voteNum != null"> AND t.`vote_num`=#{voteNum}</if>
+			<if test="id_array != null"> AND `id` IN 
+				<foreach collection="id_array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+			</if>
+			<if test="_where != null"> AND ${_where}</if>
+		</where>
+		ORDER BY t.`update_time` desc,t.`create_time` desc,t.`id` desc
+	</select>
+	<select id="selectAll" resultType="com.xinnet.entity.VoteUserPrivilegeBean">
+		SELECT <include refid="fields"/> FROM <include refid="tablename"/> t
+		ORDER BY t.`update_time` desc,t.`create_time` desc,t.`id` desc
+	</select>
+</mapper>

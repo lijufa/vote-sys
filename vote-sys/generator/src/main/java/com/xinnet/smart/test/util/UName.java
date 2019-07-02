@@ -8,7 +8,7 @@ package com.xinnet.smart.test.util;
  */
 public abstract class UName {
 	public static String toDaoName(String tableName) {
-		return toDaoName(tableName, tableName.indexOf('_') + 1);
+		return toDaoName(tableName, 0);
 	}
 
 	public static String toDaoName(String tableName, int start) {
@@ -20,7 +20,7 @@ public abstract class UName {
 	}
 
 	public static String toBeanName(String tableName) {
-		return toBeanName(tableName, tableName.indexOf('_') + 1);
+		return toBeanName(tableName, 0);
 	}
 
 	public static String toBeanName(String tableName, int start) {
@@ -28,7 +28,7 @@ public abstract class UName {
 	}
 
 	public static String toEntityName(String tableName) {
-		return toEntityName(tableName, tableName.indexOf('_') + 1);
+		return toEntityName(tableName, 0);
 		//return toEntityName(tableName, 1);
 	}
 

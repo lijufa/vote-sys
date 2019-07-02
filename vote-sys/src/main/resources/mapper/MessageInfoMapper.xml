@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xinnet.dao.IMessageInfoDao">
+	<sql id="tablename">`message_info`</sql>
+	<sql id="fields">t.`update_time` AS `updateTime`,t.`deleted`,t.`create_time` AS `createTime`,t.`send_type` AS `sendType`,t.`id`,t.`type`,t.`title`,t.`send_condition` AS `sendCondition`,t.`content`</sql>
+	<sql id="fieldsForInsert">`update_time`,`deleted`,`create_time`,`send_type`,`id`,`type`,`title`,`send_condition`,`content`</sql>
+	<insert id="insert" parameterType="com.xinnet.entity.MessageInfoBean">
+		INSERT INTO <include refid="tablename"/>(<include refid="fieldsForInsert"/>) 
+		VALUES(#{updateTime},#{deleted},#{createTime},#{sendType},#{id},#{type},#{title},#{sendCondition},#{content})
+	</insert>
+	<insert id="inserts" parameterType="java.lang.Iterable">
+		INSERT INTO <include refid="tablename"/>(<include refid="fieldsForInsert"/>) VALUES
+		<foreach collection="list" item="item" index="index" separator=",">
+			(#{item.updateTime},#{item.deleted},#{item.createTime},#{item.sendType},#{item.id},#{item.type},#{item.title},#{item.sendCondition},#{item.content})
+		</foreach>
+	</insert>
+	<delete id="deletes">
+		DELETE FROM <include refid="tablename"/>
+	</delete>
+	<select id="selectOne" resultType="com.xinnet.entity.MessageInfoBean"  parameterType="com.xinnet.entity.MessageInfoBean">
+		SELECT <include refid="fields"/> FROM <include refid="tablename"/> t
+		<where>
+			<if test="updateTime != null"> AND t.`update_time`=#{updateTime}</if>
+ 			<if test="deleted != null"> AND t.`deleted`=#{deleted}</if>
+ 			<if test="createTime != null"> AND t.`create_time`=#{createTime}</if>
+ 			<if test="sendType != null"> AND t.`send_type`=#{sendType}</if>
+ 			<if test="id != null"> AND t.`id`=#{id}</if>
+ 			<if test="type != null"> AND t.`type`=#{type}</if>
+ 			<if test="title != null"> AND t.`title`=#{title}</if>
+ 			<if test="sendCondition != null"> AND t.`send_condition`=#{sendCondition}</if>
+ 			<if test="content != null"> AND t.`content`=#{content}</if>
+			<if test="id_array != null"> AND `id` IN 
+				<foreach collection="id_array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+			</if>
+			<if test="_where != null"> AND ${_where}</if>
+		</where>
+		LIMIT 1
+	</select>
+	<select id="select" resultType="com.xinnet.entity.MessageInfoBean"  parameterType="com.xinnet.entity.MessageInfoBean">
+		SELECT <include refid="fields"/> FROM <include refid="tablename"/> t
+		<where>
+			<if test="updateTime != null"> AND t.`update_time`=#{updateTime}</if>
+ 			<if test="deleted != null"> AND t.`deleted`=#{deleted}</if>
+ 			<if test="createTime != null"> AND t.`create_time`=#{createTime}</if>
+ 			<if test="sendType != null"> AND t.`send_type`=#{sendType}</if>
+ 			<if test="id != null"> AND t.`id`=#{id}</if>
+ 			<if test="type != null"> AND t.`type`=#{type}</if>
+ 			<if test="title != null"> AND t.`title`=#{title}</if>
+ 			<if test="sendCondition != null"> AND t.`send_condition`=#{sendCondition}</if>
+ 			<if test="content != null"> AND t.`content`=#{content}</if>
+			<if test="id_array != null"> AND `id` IN 
+				<foreach collection="id_array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+			</if>
+			<if test="_where != null"> AND ${_where}</if>
+		</where>
+		ORDER BY t.`update_time` desc,t.`create_time` desc,t.`id` desc
+	</select>
+	<select id="selectPaged" resultType="com.xinnet.entity.MessageInfoBean"  parameterType="com.xinnet.entity.MessageInfoBean">
+		SELECT <include refid="fields"/> FROM <include refid="tablename"/> t
+		<where>
+			<if test="updateTime != null"> AND t.`update_time`=#{updateTime}</if>
+ 			<if test="deleted != null"> AND t.`deleted`=#{deleted}</if>
+ 			<if test="createTime != null"> AND t.`create_time`=#{createTime}</if>
+ 			<if test="sendType != null"> AND t.`send_type`=#{sendType}</if>
+ 			<if test="id != null"> AND t.`id`=#{id}</if>
+ 			<if test="type != null"> AND t.`type`=#{type}</if>
+ 			<if test="title != null"> AND t.`title`=#{title}</if>
+ 			<if test="sendCondition != null"> AND t.`send_condition`=#{sendCondition}</if>
+ 			<if test="content != null"> AND t.`content`=#{content}</if>
+			<if test="id_array != null"> AND `id` IN 
+				<foreach collection="id_array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+			</if>
+			<if test="_where != null"> AND ${_where}</if>
+		</where>
+		ORDER BY t.`update_time` desc,t.`create_time` desc,t.`id` desc
+	</select>
+	<select id="total" resultType="java.lang.Long"  parameterType="com.xinnet.entity.MessageInfoBean">
+		SELECT COUNT(1) FROM <include refid="tablename"/> t
+		<where>
+			<if test="updateTime != null"> AND t.`update_time`=#{updateTime}</if>
+ 			<if test="deleted != null"> AND t.`deleted`=#{deleted}</if>
+ 			<if test="createTime != null"> AND t.`create_time`=#{createTime}</if>
+ 			<if test="sendType != null"> AND t.`send_type`=#{sendType}</if>
+ 			<if test="id != null"> AND t.`id`=#{id}</if>
+ 			<if test="type != null"> AND t.`type`=#{type}</if>
+ 			<if test="title != null"> AND t.`title`=#{title}</if>
+ 			<if test="sendCondition != null"> AND t.`send_condition`=#{sendCondition}</if>
+ 			<if test="content != null"> AND t.`content`=#{content}</if>
+			<if test="id_array != null"> AND `id` IN 
+				<foreach collection="id_array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+			</if>
+			<if test="_where != null"> AND ${_where}</if>
+		</where>
+	</select>
+	<delete id="delete" parameterType="java.lang.String">
+		DELETE FROM <include refid="tablename"/> WHERE `id`=#{id}
+	</delete>
+	<update id="update" parameterType="com.xinnet.entity.MessageInfoBean">
+		UPDATE <include refid="tablename"/>
+		<set>
+			<if test="updateTime != null">
+				`update_time`=#{updateTime},
+			</if>
+ 			<if test="deleted != null">
+				`deleted`=#{deleted},
+			</if>
+ 			<if test="createTime != null">
+				`create_time`=#{createTime},
+			</if>
+ 			<if test="sendType != null">
+				`send_type`=#{sendType},
+			</if>
+  			<if test="type != null">
+				`type`=#{type},
+			</if>
+ 			<if test="title != null">
+				`title`=#{title},
+			</if>
+ 			<if test="sendCondition != null">
+				`send_condition`=#{sendCondition},
+			</if>
+ 			<if test="content != null">
+				`content`=#{content},
+			</if>
+		</set>
+		WHERE `id`=#{id}
+	</update>
+	<update id="updates" parameterType="com.xinnet.entity.MessageInfoBean">
+		UPDATE <include refid="tablename"/>
+		<set>
+			<if test="updateTime != null">
+				`update_time`=#{updateTime},
+			</if>
+ 			<if test="deleted != null">
+				`deleted`=#{deleted},
+			</if>
+ 			<if test="createTime != null">
+				`create_time`=#{createTime},
+			</if>
+ 			<if test="sendType != null">
+				`send_type`=#{sendType},
+			</if>
+  			<if test="type != null">
+				`type`=#{type},
+			</if>
+ 			<if test="title != null">
+				`title`=#{title},
+			</if>
+ 			<if test="sendCondition != null">
+				`send_condition`=#{sendCondition},
+			</if>
+ 			<if test="content != null">
+				`content`=#{content},
+			</if>
+		</set>
+		WHERE `id` IN 
+				<foreach collection="id_array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+	</update>
+	<update id="updateAll" parameterType="com.xinnet.entity.MessageInfoBean">
+		UPDATE <include refid="tablename"/>
+		<set>
+			<if test="updateTime != null">
+				`update_time`=#{updateTime},
+			</if>
+ 			<if test="deleted != null">
+				`deleted`=#{deleted},
+			</if>
+ 			<if test="createTime != null">
+				`create_time`=#{createTime},
+			</if>
+ 			<if test="sendType != null">
+				`send_type`=#{sendType},
+			</if>
+  			<if test="type != null">
+				`type`=#{type},
+			</if>
+ 			<if test="title != null">
+				`title`=#{title},
+			</if>
+ 			<if test="sendCondition != null">
+				`send_condition`=#{sendCondition},
+			</if>
+ 			<if test="content != null">
+				`content`=#{content},
+			</if>
+		</set>
+	</update>
+	<select id="selectById" resultType="com.xinnet.entity.MessageInfoBean"  parameterType="java.lang.String">
+		SELECT <include refid="fields"/> FROM <include refid="tablename"/> t WHERE `id`=#{id}
+	</select>
+	<select id="selectByIdArray" resultType="com.xinnet.entity.MessageInfoBean">
+		SELECT <include refid="fields"/> FROM <include refid="tablename"/> t WHERE t.`id` IN 
+		<foreach collection="array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+		ORDER BY t.`update_time` desc,t.`create_time` desc,t.`id` desc
+	</select>
+	<select id="selectId" resultType="java.lang.String"  parameterType="com.xinnet.entity.MessageInfoBean">
+		SELECT `id` FROM <include refid="tablename"/> t
+		<where>
+			<if test="updateTime != null"> AND t.`update_time`=#{updateTime}</if>
+ 			<if test="deleted != null"> AND t.`deleted`=#{deleted}</if>
+ 			<if test="createTime != null"> AND t.`create_time`=#{createTime}</if>
+ 			<if test="sendType != null"> AND t.`send_type`=#{sendType}</if>
+ 			<if test="id != null"> AND t.`id`=#{id}</if>
+ 			<if test="type != null"> AND t.`type`=#{type}</if>
+ 			<if test="title != null"> AND t.`title`=#{title}</if>
+ 			<if test="sendCondition != null"> AND t.`send_condition`=#{sendCondition}</if>
+ 			<if test="content != null"> AND t.`content`=#{content}</if>
+			<if test="id_array != null"> AND `id` IN 
+				<foreach collection="id_array" index="index" item="item" open="(" separator="," close=")">#{item}</foreach>
+			</if>
+			<if test="_where != null"> AND ${_where}</if>
+		</where>
+		ORDER BY t.`update_time` desc,t.`create_time` desc,t.`id` desc
+	</select>
+	<select id="selectAll" resultType="com.xinnet.entity.MessageInfoBean">
+		SELECT <include refid="fields"/> FROM <include refid="tablename"/> t
+		ORDER BY t.`update_time` desc,t.`create_time` desc,t.`id` desc
+	</select>
+</mapper>
