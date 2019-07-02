@@ -1,0 +1,5 @@
+jdbc_driverClassName=com.mysql.jdbc.Driver
+jdbc_url=jdbc:mysql://127.0.0.1:3306/vote?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&failOverReadOnly=false
+#jdbc_url=jdbc:mysql://10.18.1.143:13306/smartBus?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&failOverReadOnly=false
+jdbc_username=root
+jdbc_password=root

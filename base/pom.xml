@@ -9,7 +9,7 @@
 		<!--<relativePath>../pom.xml</relativePath>-->
 	</parent>
 	 <groupId>com.xinnet.base</groupId>
-	<artifactId>smart-lib-base</artifactId>
+	<artifactId>vote-sys-base</artifactId>
 	<version>3</version>
 	<packaging>jar</packaging>
 	<properties>

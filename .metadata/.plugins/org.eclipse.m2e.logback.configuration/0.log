@@ -587,3 +587,97 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2019-06-28 17:11:50,049 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-06-28 17:11:50,049 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\project\vote\vote-sys\src\test\resources
 2019-06-28 17:11:50,051 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-07-01 17:47:34,933 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.xinnet.base:smart-lib-base:3 @ E:\vote_sys\vote-sys\base\pom.xml.
+2019-07-01 17:47:35,767 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-07-01 17:47:36,393 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.xinnet.sys:vote-sys:3 @ E:\vote_sys\vote-sys\vote-sys\pom.xml.
+2019-07-01 17:47:42,157 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-01 17:47:42,175 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-07-01 17:47:42,188 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-01 17:47:42,188 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\base\src\test\resources
+2019-07-01 17:47:42,188 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\base\src\main\webapp
+2019-07-01 17:47:45,058 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.xinnet.sys:vote-sys:3 @ E:\vote_sys\vote-sys\vote-sys\pom.xml.
+2019-07-01 17:47:46,346 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-07-01 17:47:48,738 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-01 17:47:48,738 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-01 17:47:48,740 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2019-07-01 17:47:48,836 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-01 17:47:48,837 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\vote-sys\src\test\resources
+2019-07-01 17:47:48,837 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-07-01 17:47:48,861 [Worker-13] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of vote-sys
+2019-07-01 17:47:48,862 [Worker-13] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for vote-sys
+2019-07-01 17:47:48,933 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 08:30:14,915 [Worker-168] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\vote_sys\vote-sys\base
+2019-07-02 08:30:14,916 [Worker-168] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2019-07-02 08:30:21,363 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 08:30:21,365 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 08:30:21,366 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 08:30:21,366 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\base\src\test\resources
+2019-07-02 08:30:21,366 [Worker-174] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\base\src\main\webapp
+2019-07-02 08:38:42,670 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 08:38:42,683 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 08:38:42,684 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2019-07-02 08:38:42,748 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 08:38:42,748 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\vote-sys\src\test\resources
+2019-07-02 08:38:42,748 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-07-02 08:47:43,238 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2
+2019-07-02 20:14:36,441 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:14:36,453 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:14:36,454 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:14:36,455 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:14:36,455 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\vote-sys\src\test\resources
+2019-07-02 20:14:36,455 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:21:01,719 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:21:01,734 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:21:01,735 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2019-07-02 20:21:01,801 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:21:01,801 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\vote-sys\src\test\resources
+2019-07-02 20:21:01,802 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-07-02 20:23:35,604 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.xinnet.sys:vote-sys:3 @ E:\vote_sys\vote-sys\vote-sys\pom.xml.
+2019-07-02 20:23:36,054 [Worker-6] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/xinnet/base/vote-sys-base/3/vote-sys-base-3.pom
+2019-07-02 20:23:36,059 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.xinnet.base:vote-sys-base:jar:3 is missing, no dependency information available
+2019-07-02 20:23:36,979 [Worker-6] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/xinnet/base/vote-sys-base/3/vote-sys-base-3.jar
+2019-07-02 20:23:38,186 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.xinnet.base:vote-sys-base:jar:3 is missing, no dependency information available
+2019-07-02 20:23:39,347 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:23:39,356 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:23:39,359 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2019-07-02 20:23:39,392 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:23:39,392 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\vote-sys\src\test\resources
+2019-07-02 20:23:39,392 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:23:39,392 [Worker-6] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of vote-sys
+2019-07-02 20:23:39,393 [Worker-6] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for vote-sys
+2019-07-02 20:23:39,440 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:23:53,990 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.xinnet.base:vote-sys-base:jar:3 is missing, no dependency information available
+2019-07-02 20:23:54,599 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:23:54,600 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:23:54,600 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:23:54,601 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:23:54,601 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\vote-sys\src\test\resources
+2019-07-02 20:23:54,601 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:32:09,035 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:32:09,039 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:32:09,041 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-07-02 20:32:09,044 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:32:09,044 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\vote-sys\src\test\resources
+2019-07-02 20:32:09,044 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:32:34,054 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.xinnet.sys:vote-sys:3 @ E:\vote_sys\vote-sys\vote-sys\pom.xml.
+2019-07-02 20:32:34,061 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.xinnet.base:vote-sys-base:jar:3 is missing, no dependency information available
+2019-07-02 20:32:34,719 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.xinnet.base:vote-sys-base:jar:3 is missing, no dependency information available
+2019-07-02 20:32:35,707 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:32:35,708 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:32:35,708 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:32:35,709 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:32:35,709 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\vote-sys\src\test\resources
+2019-07-02 20:32:35,709 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:32:35,709 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of vote-sys
+2019-07-02 20:32:35,709 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for vote-sys
+2019-07-02 20:32:35,719 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:35:02,699 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for com.xinnet.base:vote-sys-base:jar:3 is missing, no dependency information available
+2019-07-02 20:35:04,318 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:35:04,335 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-07-02 20:35:04,336 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 15 resources
+2019-07-02 20:35:04,404 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-02 20:35:04,405 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory E:\vote_sys\vote-sys\vote-sys\src\test\resources
+2019-07-02 20:35:04,406 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2019-07-02 20:36:14,830 [Worker-1] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\vote_sys\vote-sys\base
+2019-07-02 20:36:14,830 [Worker-1] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2019-07-02 20:36:52,346 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.apache.commons:commons-io:jar:1.3.2 has been relocated to commons-io:commons-io:jar:1.3.2

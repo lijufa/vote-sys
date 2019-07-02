@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue Jul 02 08:31:04 CST 2019
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Administrator\\.m2\\repository\\org\\springframework\\spring-web\\3.2.13.RELEASE\\spring-web-3.2.13.RELEASE.jar=WEB-INF/lib/spring-web-3.2.13.RELEASE.jar
+org.eclipse.jst.j2ee.server\:base=WEB-INF/lib/smart-lib-base-3.jar

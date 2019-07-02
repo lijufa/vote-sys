@@ -14,7 +14,7 @@
   <packaging>war</packaging>
   <!--<packaging>pom</packaging>-->
 
-  <name>vote-sys Maven Webapp</name>
+  <name>vote-sys</name>
   <!-- FIXME change it to the project's website -->
   <!--<url>http://www.example.com</url>-->
 
@@ -22,7 +22,7 @@
   <dependencies>
     <dependency>
       <groupId>com.xinnet.base</groupId>
-      <artifactId>smart-lib-base</artifactId>
+      <artifactId>vote-sys-base</artifactId>
       <version>3</version>
     </dependency> 
     <!--测试-->
@@ -154,11 +154,7 @@
       <version>2.4.2</version>
       <type>jar</type>
     </dependency>
-      <dependency>
-          <groupId>com.xinnet</groupId>
-          <artifactId>smart-lib-base</artifactId>
-          <version>3</version>
-      </dependency>
+      
       <!-- /redis -->
   </dependencies>
   <build>
